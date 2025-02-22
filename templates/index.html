@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommender System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .search-container {
+            margin-top: 30px;
+        }
+        input[type="text"] {
+            width: 40%;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            outline: none;
+            font-size: 18px;
+            text-align: center;
+        }
+        button {
+            margin-left: 10px;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: #ff6b81;
+            color: white;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background-color: #ff4757;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Welcome to the Book Recommender</h1>
+
+    <div class="search-container">
+        <form action="/recommend" method="post">
+            <input type="text" name="book_name" placeholder="Enter Book Name..." required>
+            <button type="submit">🔍 Search</button>
+        </form>
+    </div>
+
+</body>
+</html>
